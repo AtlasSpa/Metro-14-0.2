@@ -17,7 +17,18 @@
       "name": "broken"
     },
     {
-      "name": "normal-unshaded"
+      "name": "normal-unshaded",
+      "delays": [
+        [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ]
+      ]
+
+
+
     }
   ]
 }
