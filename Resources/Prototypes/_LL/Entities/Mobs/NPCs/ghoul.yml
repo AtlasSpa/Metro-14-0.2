@@ -13,6 +13,17 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: N14ToughAnimal
+  - type: Bloodstream
+    bloodSolution: Bloodstream
+    bloodReagent: FluorosulfuricAcid
+    bloodMaxVolume: 300
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.0
+        Blunt: 0.7
+        Piercing: 0.7
+        Slash: 0.7
   - type: MobState
     allowedStates:
       - Alive
@@ -21,8 +32,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Critical
-      40: Dead
+      34: Critical
+      46: Dead
   - type: DamageStateVisuals
     states:
       Alive:
