@@ -1,0 +1,51 @@
+- type: entity
+  name: Спавнер Упырь
+  id: LLSpawnerMobGhoul
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLGhoul
+
+- type: entity
+  name: Спавнер Жук-Паук # большой
+  id: LLSpawnerMobBeetlelegs
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLBeetlelegs
+
+- type: entity
+  name: Спавнер Жук-Паук # маленький
+  id: LLSpawnerMobBeetlelegsSmall
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLSmallBeetlelegs
+
+- type: entity
+  name: Спавнер Лемминг
+  id: LLSpawnerMobFototoxisch
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLFototoxisch

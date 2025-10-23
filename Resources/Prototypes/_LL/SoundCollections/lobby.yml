@@ -1,0 +1,9 @@
+- type: soundCollection
+  id: LobbyMusic
+  files:
+    - /Audio/_LL/Lobby/metro-2033-ost-01-metro-2033-main-theme (online-audio-converter.com).ogg
+    - /Audio/_LL/Lobby/metro-2033-ost-01-metro-2033-main-theme.ogg
+    - /Audio/_LL/Lobby/metro-2033-ost-02-the-anomaly.ogg
+    - /Audio/_LL/Lobby/metro-2033-ost-03-the-market.ogg
+    - /Audio/_LL/Lobby/metro-2033-ost-06-hope.ogg
+    - /Audio/_LL/Lobby/metro-2033-ost-07-guitar-song-1.ogg

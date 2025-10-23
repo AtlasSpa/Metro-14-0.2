@@ -1,0 +1,63 @@
+- type: entity
+  name: периодический спавн упырь
+  id: LLGhoulTimedSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: ai
+  - type: TimedSpawner
+    prototypes:
+      - LLGhoul
+    interval: 5
+    maxCount: 10
+    spawnRadius: 5.0
+
+- type: entity
+  name: периодический спавн Жук-Паук
+  id: LLBeetlelegsTimedSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: ai
+  - type: TimedSpawner
+    prototypes:
+      - LLBeetlelegs
+    interval: 5
+    maxCount: 10
+    spawnRadius: 5.0
+
+- type: entity
+  name: периодический спавн Жук-Паук # маленький
+  id: LLSmallBeetlelegsTimedSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: ai
+  - type: TimedSpawner
+    prototypes:
+      - LLSmallBeetlelegs
+    interval: 5
+    maxCount: 10
+    spawnRadius: 5.0
+
+- type: entity
+  name: периодический спавн лемминг
+  id: LLFototoxischTimedSpawner
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - state: ai
+  - type: TimedSpawner
+    prototypes:
+      - LLFototoxisch
+    interval: 5
+    maxCount: 10
+    spawnRadius: 5.0

@@ -1,0 +1,8 @@
+- type: lobbyBackground
+  id: LL1
+  background: /Textures/_LL/LobbyScreens/1.webp
+- type: lobbyBackground
+  id: LL2
+  background: /Textures/_LL/LobbyScreens/2.webp
+- type: lobbyBackground
+  id: LL3
