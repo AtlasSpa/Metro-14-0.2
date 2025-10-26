@@ -1,279 +1,725 @@
 - type: entity
-  parent: CrateBaseWeldable
+  parent: LLBaseLootShelf
   id: LLBoxTimedResupply
   name: старый ящик
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
     sprite: _LL/Objects/Box/box1.rsi
-  - type: EntityStorage
-    maxSlots: 15
-    maxWeight: 500
-    openOnActivate: true
-    occludesLight: false
+    netsync: false
+    state: icon  # Указываем состояние icon
+  - type: Tag
+    tags:
+    - Wooden
+    - Resupply
+    - NoAnchor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
   - type: TimedStorageFill
     contents:
         - id: FoodTinBeans
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedStew
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedBeans
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinPeaches
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedFish
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinMRE
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedBeansTrash
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinMRETrash
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedFishTrash
-          prob: 0.1
+          prob: 00.1
         - id: N14JunkTincan
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedStewTrash
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinPeachesTrash
-          prob: 0.1
+          prob: 00.1
         - id: N14FoodDogFoodTrash
-          prob: 0.1
+          prob: 00.1
         - id: SheetPlastic10
-          prob: 0.2
+          prob: 00.1
         - id: SheetGlass10
-          prob: 0.2
+          prob: 00.1
         - id: SheetSteel10
-          prob: 0.2
+          prob: 00.1
         - id: PartRodMetal10
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellSmallPrinted
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellMediumPrinted
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellHighPrinted
-          prob: 0.2
+          prob: 00.1
         - id: CapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: MicroManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: MatterBinStockPart
-          prob: 0.2
+          prob: 00.1
         - id: AdvancedCapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: NanoManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: AdvancedMatterBinStockPart
-          prob: 0.2
+          prob: 00.1
         - id: SuperCapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: PicoManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: SuperMatterBinStockPart
-          prob: 0.2
-        - id: ClothingBeltUtility
-          prob: 0.2
+          prob: 00.1
         - id: Multitool
-          prob: 0.2
+          prob: 00.1
         - id: ClothingHeadHatWelding
-          prob: 0.2
+          prob: 00.1
         - id: Screwdriver
-          prob: 0.2
+          prob: 00.1
         - id: Wirecutter
-          prob: 0.2
+          prob: 00.1
         - id: Welder
-          prob: 0.2
+          prob: 00.1
         - id: Crowbar
-          prob: 0.2
+          prob: 00.1
         - id: Wrench
-          prob: 0.2
+          prob: 00.1
         - id: DrinkWaterBottleFull
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackWinston
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackKool
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackMarlboro
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackRepublics
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackSalem
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackCustom
-          prob: 0.2
+          prob: 00.1
         - id: FlippoLighter
-          prob: 0.2
+          prob: 00.1
         - id: N14JunkComponentMainboard
-          prob: 0.2
+          prob: 00.1
         - id: N14JunkComponentSensor
-          prob: 0.2
+          prob: 00.1
         - id: ClothingHeadBrotherhoodScribeHeadset
-          prob: 0.2
+          prob: 00.1
         - id: EmptyFlashlightLantern
-          prob: 0.2
+          prob: 00.1
         - id: CellRechargerCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: ReagentGrinderMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: BiomassReclaimerMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: MicrowaveMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: OreProcessorMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: PortableGeneratorJrPacmanMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: APCElectronics
-          prob: 0.2
+          prob: 00.1
         - id: SubstationMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: SMESMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: LLProvisions1
-          prob: 0.08
+          prob: 00.08
         - id: LLProvisions2
-          prob: 0.010
+          prob: 00.023
         - id: LLProvisions3
-          prob: 0.025
+          prob: 00.020
         - id: LLProvisions4
-          prob: 0.030
+          prob: 00.010
 
 - type: entity
-  parent: CrateBaseWeldable
+  parent: LLBaseLootShelf
   id: LLBoxTimedResupply2
   name: старый ящик
   description: в нём явно, что-то будет.
   components:
   - type: Sprite
     sprite: _LL/Objects/Box/box2.rsi
-  - type: EntityStorage
-    maxSlots: 15
-    maxWeight: 500
-    openOnActivate: true
-    occludesLight: false
+    netsync: false
+    state: icon  # Указываем состояние icon
+  - type: Tag
+    tags:
+    - Wooden
+    - Resupply
+    - NoAnchor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
   - type: TimedStorageFill
     contents:
         - id: FoodTinBeans
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedStew
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedBeans
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinPeaches
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedFish
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinMRE
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedBeansTrash
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinMRETrash
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedFishTrash
-          prob: 0.1
+          prob: 00.1
         - id: N14JunkTincan
-          prob: 0.1
+          prob: 00.1
         - id: LLCannedStewTrash
-          prob: 0.1
+          prob: 00.1
         - id: FoodTinPeachesTrash
-          prob: 0.1
+          prob: 00.1
         - id: N14FoodDogFoodTrash
-          prob: 0.1
+          prob: 00.1
         - id: SheetPlastic10
-          prob: 0.2
+          prob: 00.1
         - id: SheetGlass10
-          prob: 0.2
+          prob: 00.1
         - id: SheetSteel10
-          prob: 0.2
+          prob: 00.1
         - id: PartRodMetal10
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellSmallPrinted
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellMediumPrinted
-          prob: 0.2
+          prob: 00.1
         - id: PowerCellHighPrinted
-          prob: 0.2
+          prob: 00.1
         - id: CapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: MicroManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: MatterBinStockPart
-          prob: 0.2
+          prob: 00.1
         - id: AdvancedCapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: NanoManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: AdvancedMatterBinStockPart
-          prob: 0.2
+          prob: 00.1
         - id: SuperCapacitorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: PicoManipulatorStockPart
-          prob: 0.2
+          prob: 00.1
         - id: SuperMatterBinStockPart
-          prob: 0.2
-        - id: ClothingBeltUtility
-          prob: 0.2
+          prob: 00.1
         - id: Multitool
-          prob: 0.2
+          prob: 00.1
         - id: ClothingHeadHatWelding
-          prob: 0.2
+          prob: 00.1
         - id: Screwdriver
-          prob: 0.2
+          prob: 00.1
         - id: Wirecutter
-          prob: 0.2
+          prob: 00.1
         - id: Welder
-          prob: 0.2
+          prob: 00.1
         - id: Crowbar
-          prob: 0.2
+          prob: 00.1
         - id: Wrench
-          prob: 0.2
+          prob: 00.1
         - id: DrinkWaterBottleFull
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackWinston
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackKool
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackMarlboro
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackRepublics
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackSalem
-          prob: 0.2
+          prob: 00.1
         - id: N14CigarettePackCustom
-          prob: 0.2
+          prob: 00.1
         - id: FlippoLighter
-          prob: 0.2
+          prob: 00.1
         - id: N14JunkComponentMainboard
-          prob: 0.2
+          prob: 00.1
         - id: N14JunkComponentSensor
-          prob: 0.2
+          prob: 00.1
         - id: ClothingHeadBrotherhoodScribeHeadset
-          prob: 0.2
+          prob: 00.1
         - id: EmptyFlashlightLantern
-          prob: 0.2
+          prob: 00.1
         - id: CellRechargerCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: ReagentGrinderMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: BiomassReclaimerMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: MicrowaveMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: OreProcessorMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: PortableGeneratorJrPacmanMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: APCElectronics
-          prob: 0.2
+          prob: 00.1
         - id: SubstationMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: SMESMachineCircuitboard
-          prob: 0.2
+          prob: 00.1
         - id: LLProvisions1
-          prob: 0.08
+          prob: 00.08
         - id: LLProvisions2
-          prob: 0.010
+          prob: 00.023
         - id: LLProvisions3
-          prob: 0.025
+          prob: 00.020
         - id: LLProvisions4
-          prob: 0.030
+          prob: 00.010
+
+- type: entity
+  parent: LLBaseLootShelf
+  id: LLShelfJunk
+  name: куча с хламом
+  description: В ней явно что-то будет.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/crafting_junk.rsi
+    netsync: false
+    state: Junk_3
+  - type: Tag
+    tags:
+    - Junk
+    - Scrap
+    - NoAnchor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.2,0.4,0.2"
+        density: 40
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: TimedStorageFill
+    contents:
+        - id: N14MaterialThread1
+          prob: 0.1
+        - id: N14JunkCookpot
+          prob: 0.1
+        - id: N14ScrapElectronic1
+          prob: 0.1
+        - id: MaterialCloth10
+          prob: 0.1
+        - id: N14ScrapSteel1
+          prob: 0.1
+        - id: N14ScrapLead1
+          prob: 0.1
+        - id: N14ScrapCopper1
+          prob: 0.1
+        - id: MaterialCloth1
+          prob: 0.1
+        - id: N14ScrapBrass1
+          prob: 0.1
+        - id: N14ScrapGold1
+          prob: 0.1
+        - id: N14Scrap1
+          prob: 0.1
+
+# Базовый абстрактный шаблон для полок с лутом
+- type: entity
+  id: LLBaseLootShelf
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Pullable
+  - type: Tag
+    tags:
+      - Structure
+      - LootContainer
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 9
+    staminaCost: 50
+    soundHit:
+      collection: MetalThud
+  - type: Damageable
+    damageModifierSet: Wood
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Storage
+    grid:
+    - 0,0,9,3
+    maxItemSize: Huge
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: InteractionOutline
+
+# Полка с основным лутом (провизия, инструменты, электроника) - НЕОТКРЕПЛЯЕМАЯ
+- type: entity
+  id: LLShelfResupply
+  parent: LLBaseLootShelf
+  name: старая полка
+  description: на нёй явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/np13_misc.rsi
+    netsync: false
+    state: shelf_wood
+  - type: Tag
+    tags:
+    - Wooden
+    - Resupply
+    - NoAnchor  # Добавляем тег для обозначения неоткрепляемости
+  # КОМПОНЕНТ Anchorable УБРАН - полка теперь неоткрепляемая
+  - type: TimedStorageFill
+    contents:
+      - id: FoodTinBeans
+        prob: 00.1
+      - id: LLCannedStew
+        prob: 00.1
+      - id: LLCannedBeans
+        prob: 00.1
+      - id: FoodTinPeaches
+        prob: 00.1
+      - id: LLCannedFish
+        prob: 00.1
+      - id: FoodTinMRE
+        prob: 00.1
+      - id: LLCannedBeansTrash
+        prob: 00.1
+      - id: FoodTinMRETrash
+        prob: 00.1
+      - id: LLCannedFishTrash
+        prob: 00.1
+      - id: N14JunkTincan
+        prob: 00.1
+      - id: LLCannedStewTrash
+        prob: 00.1
+      - id: FoodTinPeachesTrash
+        prob: 00.1
+      - id: N14FoodDogFoodTrash
+        prob: 00.1
+      - id: SheetPlastic10
+        prob: 00.1
+      - id: SheetGlass10
+        prob: 00.1
+      - id: SheetSteel10
+        prob: 00.1
+      - id: PartRodMetal10
+        prob: 00.1
+      - id: PowerCellSmallPrinted
+        prob: 00.1
+      - id: PowerCellMediumPrinted
+        prob: 00.1
+      - id: PowerCellHighPrinted
+        prob: 00.1
+      - id: CapacitorStockPart
+        prob: 00.1
+      - id: MicroManipulatorStockPart
+        prob: 00.1
+      - id: MatterBinStockPart
+        prob: 00.1
+      - id: AdvancedCapacitorStockPart
+        prob: 00.1
+      - id: NanoManipulatorStockPart
+        prob: 00.1
+      - id: AdvancedMatterBinStockPart
+        prob: 00.1
+      - id: SuperCapacitorStockPart
+        prob: 00.1
+      - id: PicoManipulatorStockPart
+        prob: 00.1
+      - id: SuperMatterBinStockPart
+        prob: 00.1
+      - id: Multitool
+        prob: 00.1
+      - id: ClothingHeadHatWelding
+        prob: 00.1
+      - id: Screwdriver
+        prob: 00.1
+      - id: Wirecutter
+        prob: 00.1
+      - id: Welder
+        prob: 00.1
+      - id: Crowbar
+        prob: 00.1
+      - id: Wrench
+        prob: 00.1
+      - id: DrinkWaterBottleFull
+        prob: 00.1
+      - id: N14CigarettePackWinston
+        prob: 00.1
+      - id: N14CigarettePackKool
+        prob: 00.1
+      - id: N14CigarettePackMarlboro
+        prob: 00.1
+      - id: N14CigarettePackRepublics
+        prob: 00.1
+      - id: N14CigarettePackSalem
+        prob: 00.1
+      - id: N14CigarettePackCustom
+        prob: 00.1
+      - id: FlippoLighter
+        prob: 00.1
+      - id: N14JunkComponentMainboard
+        prob: 00.1
+      - id: N14JunkComponentSensor
+        prob: 00.1
+      - id: ClothingHeadBrotherhoodScribeHeadset
+        prob: 00.1
+      - id: EmptyFlashlightLantern
+        prob: 00.1
+      - id: CellRechargerCircuitboard
+        prob: 00.1
+      - id: ReagentGrinderMachineCircuitboard
+        prob: 00.1
+      - id: BiomassReclaimerMachineCircuitboard
+        prob: 00.1
+      - id: MicrowaveMachineCircuitboard
+        prob: 00.1
+      - id: OreProcessorMachineCircuitboard
+        prob: 00.1
+      - id: PortableGeneratorJrPacmanMachineCircuitboard
+        prob: 00.1
+      - id: APCElectronics
+        prob: 00.1
+      - id: SubstationMachineCircuitboard
+        prob: 00.1
+      - id: SMESMachineCircuitboard
+        prob: 00.1
+      - id: LLProvisions1
+        prob: 00.08
+      - id: LLProvisions2
+        prob: 00.023
+      - id: LLProvisions3
+        prob: 00.020
+      - id: LLProvisions4
+        prob: 00.010
+
+# Полка с основным лутом
+- type: entity
+  id: LLShelfResupplyMetal
+  parent: LLBaseLootShelf
+  name: старая полка
+  description: Прочная металлическая полка с припасами.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/64x96_furniture.rsi
+    state: wood_shelf  
+    netsync: false
+    noRot: false
+    offset: 0.5, 0.5  
+  - type: Transform
+    anchored: true
+    noRot: false  
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,0.2,1.1,-0.3"  
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Tag
+    tags:
+    - Metal
+    - Resupply
+    - NoAnchor
+  - type: Damageable
+    damageModifierSet: Metal
+  - type: TimedStorageFill
+    contents:
+      - id: FoodTinBeans
+        prob: 00.1
+      - id: LLCannedStew
+        prob: 00.1
+      - id: LLCannedBeans
+        prob: 00.1
+      - id: FoodTinPeaches
+        prob: 00.1
+      - id: LLCannedFish
+        prob: 00.1
+      - id: FoodTinMRE
+        prob: 00.1
+      - id: LLCannedBeansTrash
+        prob: 00.1
+      - id: FoodTinMRETrash
+        prob: 00.1
+      - id: LLCannedFishTrash
+        prob: 00.1
+      - id: N14JunkTincan
+        prob: 00.1
+      - id: LLCannedStewTrash
+        prob: 00.1
+      - id: FoodTinPeachesTrash
+        prob: 00.1
+      - id: N14FoodDogFoodTrash
+        prob: 00.1
+      - id: SheetPlastic10
+        prob: 00.1
+      - id: SheetGlass10
+        prob: 00.1
+      - id: SheetSteel10
+        prob: 00.1
+      - id: PartRodMetal10
+        prob: 00.1
+      - id: PowerCellSmallPrinted
+        prob: 00.1
+      - id: PowerCellMediumPrinted
+        prob: 00.1
+      - id: PowerCellHighPrinted
+        prob: 00.1
+      - id: CapacitorStockPart
+        prob: 00.1
+      - id: MicroManipulatorStockPart
+        prob: 00.1
+      - id: MatterBinStockPart
+        prob: 00.1
+      - id: AdvancedCapacitorStockPart
+        prob: 00.1
+      - id: NanoManipulatorStockPart
+        prob: 00.1
+      - id: AdvancedMatterBinStockPart
+        prob: 00.1
+      - id: SuperCapacitorStockPart
+        prob: 00.1
+      - id: PicoManipulatorStockPart
+        prob: 00.1
+      - id: SuperMatterBinStockPart
+        prob: 00.1
+      - id: Multitool
+        prob: 00.1
+      - id: ClothingHeadHatWelding
+        prob: 00.1
+      - id: Screwdriver
+        prob: 00.1
+      - id: Wirecutter
+        prob: 00.1
+      - id: Welder
+        prob: 00.1
+      - id: Crowbar
+        prob: 00.1
+      - id: Wrench
+        prob: 00.1
+      - id: DrinkWaterBottleFull
+        prob: 00.1
+      - id: N14CigarettePackWinston
+        prob: 00.1
+      - id: N14CigarettePackKool
+        prob: 00.1
+      - id: N14CigarettePackMarlboro
+        prob: 00.1
+      - id: N14CigarettePackRepublics
+        prob: 00.1
+      - id: N14CigarettePackSalem
+        prob: 00.1
+      - id: N14CigarettePackCustom
+        prob: 00.1
+      - id: FlippoLighter
+        prob: 00.1
+      - id: N14JunkComponentMainboard
+        prob: 00.1
+      - id: N14JunkComponentSensor
+        prob: 00.1
+      - id: ClothingHeadBrotherhoodScribeHeadset
+        prob: 00.1
+      - id: EmptyFlashlightLantern
+        prob: 00.1
+      - id: CellRechargerCircuitboard
+        prob: 00.1
+      - id: ReagentGrinderMachineCircuitboard
+        prob: 00.1
+      - id: BiomassReclaimerMachineCircuitboard
+        prob: 00.1
+      - id: MicrowaveMachineCircuitboard
+        prob: 00.1
+      - id: OreProcessorMachineCircuitboard
+        prob: 00.1
+      - id: PortableGeneratorJrPacmanMachineCircuitboard
+        prob: 00.1
+      - id: APCElectronics
+        prob: 00.1
+      - id: SubstationMachineCircuitboard
+        prob: 00.1
+      - id: SMESMachineCircuitboard
+        prob: 00.1
+      - id: LLProvisions1
+        prob: 00.08
+      - id: LLProvisions2
+        prob: 00.023
+      - id: LLProvisions3
+        prob: 00.020
+      - id: LLProvisions4
+        prob: 00.010
