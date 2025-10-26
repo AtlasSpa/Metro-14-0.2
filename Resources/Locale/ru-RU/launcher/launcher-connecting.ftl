@@ -1,6 +1,6 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = Corvax Fallout 14
+connecting-title = Метро
 connecting-exit = Выйти
 connecting-retry = Повторить
 connecting-reconnect = Переподключиться
