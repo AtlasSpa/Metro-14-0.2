@@ -1,0 +1,10 @@
+- type: entity
+  parent: N14SignBase
+  id: LLFlagTheNewRussianGovernment
+  name: Флаг Нового Российского Правительства
+  suffix: RU
+  description: Они могут быть как новой надеждой так и новым концом.
+  components:
+  - type: Sprite
+    sprite: _LL/Structures/Poster/Flags/flag_ru.rsi
+    state: flag_ru

@@ -49,3 +49,29 @@
   - type: ConditionalSpawner
     prototypes:
       - LLFototoxisch
+
+- type: entity
+  name: Спавнер Крыса-мутант
+  id: LLSpawnerMobMutantRat
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLMutantRat
+
+- type: entity
+  name: Спанер Огненный муравей-мутант
+  id: LLSpawnerMobGiantFireAnt
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LLMobGiantFireAnt

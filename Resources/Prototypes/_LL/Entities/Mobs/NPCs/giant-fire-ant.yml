@@ -1,0 +1,91 @@
+- type: entity
+  name: Огненный муравей-мутант
+  parent: N14MobBaseHostileInsect
+  id: LLMobGiantFireAnt
+  description: Огромный мутировавший муравей красного цвета. Способен плеваться огнём на расстоянии.
+  components:
+  - type: HTN
+    rootTask:
+      task: N14RangedHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: fireant
+      sprite: _Nuclear14/Mobs/Insects/fireant.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+            radius: 0.3
+        density: 120
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: fireant
+      Critical:
+        Base: fireant
+      Dead:
+        Base: dead
+  - type: Stamina
+    critThreshold: 99
+  - type: Bloodstream
+    bloodMaxVolume: 200
+  - type: BallisticAmmoProvider
+    proto: LLBulletFiery  # Изменено на LLBulletFiery
+    capacity: 100
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+  - type: Gun
+    minAngle: 5
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 4
+    fireRate: 0.5
+    availableModes:
+      - FullAuto
+    selectedMode: FullAuto
+    soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    useKey: false
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: N14ToughAnimal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.0
+        Blunt: 0.6
+        Piercing: 0.5
+        Slash: 0.4
+        Heat: 0.8
+        Cold: 1.2
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      40: Critical
+      60: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 3.0
+  - type: Butcherable
+    spawned:
+    - id: N14MaterialAntChitin
+      amount: 1
+      prob: 0.5
+    - id: N14FoodMeatRadRaw
+      amount: 3
+  - type: Tag
+    tags:
+    - Ant
+    - Mutant
+    - Fire

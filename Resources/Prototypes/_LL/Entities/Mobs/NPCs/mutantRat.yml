@@ -1,28 +1,30 @@
 - type: entity
-  name: Жук-Паук
-  id: LLBeetlelegs
+  name: Крыса-мутант
+  id: LLMutantRat
   parent: N14MobBaseHostile
-  description: Эти жители заброшенных туннелей и других укромных уголков, которых сейчас в нашем мире хоть отбавляй, очень злобные, быстрые, сильные и хорошо бронированные твари.
+  description: Крупная мутировавшая крыса с агрессивным поведением. Результат радиационного воздействия.
   components:
   - type: Sprite
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: default
-      sprite: _LL/Entities/Mobs/NPCs/beetlelegs.rsi
+      state: molerat
+      sprite: _LL/Entities/Mobs/NPCs/molerat.rsi
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: N14ToughAnimal
   - type: Bloodstream
     bloodSolution: Bloodstream
-    bloodReagent: FluorosulfuricAcid
+    bloodReagent: Blood
     bloodMaxVolume: 150
   - type: Armor
     modifiers:
       coefficients:
-        Slash: 0.4
-        Piercing: 0.4
         Radiation: 0.0
+        Blunt: 0.3
+        Piercing: 0.1
+        Slash: 0.2
+        Heat: 0.3
   - type: MobState
     allowedStates:
       - Alive
@@ -31,41 +33,41 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      90: Critical
-      120: Dead
+      49: Critical
+      50: Dead
   - type: DamageStateVisuals
     states:
       Alive:
-        Base: default
+        Base: molerat
       Critical:
-        Base: crit
+        Base: molerat
       Dead:
         Base: dead
   - type: MeleeWeapon
     altDisarm: false
     hidden: true
     soundHit:
-      collection: AlienClaw
-    angle: 60
-    animation: WeaponArcClaw
+      collection: AlienClaw  # Звук взят с упыря
+    angle: 60  # Угол взят с упыря
+    animation: WeaponArcClaw  # Анимация взят с упыря
     wideAnimation: WeaponArcClaw
     damage:
       types:
-        Slash: 1
-        Poison: 6
-        Radiation: 3
-    range: 1.5
-    attackRate: 0.8
+        Blunt: 2
+        Slash: 4
+        Piercing: 3
+    range: 1.2
+    attackRate: 1.5
   - type: MovementSpeedModifier
-    baseWalkSpeed: 2.5
-    baseSprintSpeed: 4
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 4.0
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeCircle
-            radius: 0.25
-        density: 100
+            radius: 0.2
+        density: 80
         mask:
         - MobMask
         layer:
@@ -75,8 +77,12 @@
       task: N14HostileCompound
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadscorpion
+    - id: N14FoodMeatRadRaw
       amount: 5
+    - id: N14MaterialRawLeather1
+      amount: 1
   - type: Tag
     tags:
-    - Beetlelegs
+    - Rat
+    - Mutant
+    - Animal

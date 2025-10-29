@@ -75,10 +75,8 @@
       task: N14HostileCompound
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
-      amount: 1
-    - id: N14MaterialRawLeather1
-      amount: 1
+    - id: N14FoodMeatRadscorpion
+      amount: 2
   - type: Tag
     tags:
     - Beetlelegs

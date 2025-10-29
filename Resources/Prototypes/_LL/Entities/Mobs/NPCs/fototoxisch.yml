@@ -21,7 +21,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Critical
+      20: Critical
       40: Dead
   - type: DamageStateVisuals
     states:
@@ -46,7 +46,7 @@
     attackRate: 0.6
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
-    baseSprintSpeed: 4
+    baseSprintSpeed: 6
   - type: Fixtures
     fixtures:
       fix1:
@@ -63,9 +63,7 @@
       task: N14HostileCompound
   - type: Butcherable
     spawned:
-    - id: N14FoodMeatRadRaw
-      amount: 1
-    - id: N14MaterialRawLeather1
+    - id: GrenadeDummy
       amount: 1
   - type: Tag
     tags:

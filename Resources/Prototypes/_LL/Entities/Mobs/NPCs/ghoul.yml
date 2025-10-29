@@ -32,8 +32,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      34: Critical
-      46: Dead
+      185: Critical
+      200: Dead
   - type: DamageStateVisuals
     states:
       Alive:
@@ -52,9 +52,9 @@
     wideAnimation: WeaponArcClaw
     damage:
       types:
-        Blunt: 6
-        Slash: 7
-        Piercing: 5
+        Blunt: 7
+        Slash: 8
+        Piercing: 7
     range: 1.5
     attackRate: 1.0
   - type: MovementSpeedModifier
@@ -77,9 +77,9 @@
   - type: Butcherable
     spawned:
     - id: N14FoodMeatRadRaw
-      amount: 1
+      amount: 5
     - id: N14MaterialRawLeather1
-      amount: 1
+      amount: 10
   - type: Tag
     tags:
     - Ghoul
