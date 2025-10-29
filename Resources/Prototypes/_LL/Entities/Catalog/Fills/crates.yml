@@ -7,7 +7,7 @@
   - type: Sprite
     sprite: _LL/Objects/Box/box1.rsi
     netsync: false
-    state: icon  # Указываем состояние icon
+    state: icon
   - type: Tag
     tags:
     - Wooden
@@ -28,127 +28,133 @@
   - type: TimedStorageFill
     contents:
         - id: FoodTinBeans
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedStew
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedBeans
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinPeaches
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedFish
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinMRE
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedBeansTrash
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinMRETrash
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedFishTrash
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkTincan
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedStewTrash
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinPeachesTrash
-          prob: 00.1
+          prob: 0.1
         - id: N14FoodDogFoodTrash
-          prob: 00.1
+          prob: 0.1
         - id: SheetPlastic10
-          prob: 00.1
+          prob: 0.1
         - id: SheetGlass10
-          prob: 00.1
+          prob: 0.1
         - id: SheetSteel10
-          prob: 00.1
+          prob: 0.1
         - id: PartRodMetal10
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellSmallPrinted
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellMediumPrinted
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellHighPrinted
-          prob: 00.1
+          prob: 0.1
         - id: CapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: MicroManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: MatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: AdvancedCapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: NanoManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: AdvancedMatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: SuperCapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: PicoManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: SuperMatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: Multitool
-          prob: 00.1
+          prob: 0.1
         - id: ClothingHeadHatWelding
-          prob: 00.1
+          prob: 0.1
         - id: Screwdriver
-          prob: 00.1
+          prob: 0.1
         - id: Wirecutter
-          prob: 00.1
+          prob: 0.1
         - id: Welder
-          prob: 00.1
+          prob: 0.1
         - id: Crowbar
-          prob: 00.1
+          prob: 0.1
         - id: Wrench
-          prob: 00.1
+          prob: 0.1
         - id: DrinkWaterBottleFull
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackWinston
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackKool
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackMarlboro
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackRepublics
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackSalem
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackCustom
-          prob: 00.1
+          prob: 0.1
         - id: FlippoLighter
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkComponentMainboard
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkComponentSensor
-          prob: 00.1
+          prob: 0.1
         - id: ClothingHeadBrotherhoodScribeHeadset
-          prob: 00.1
+          prob: 0.1
         - id: EmptyFlashlightLantern
-          prob: 00.1
+          prob: 0.1
         - id: CellRechargerCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: ReagentGrinderMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: BiomassReclaimerMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: MicrowaveMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: OreProcessorMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: PortableGeneratorJrPacmanMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: APCElectronics
-          prob: 00.1
+          prob: 0.1
         - id: SubstationMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: SMESMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: LLProvisions1
-          prob: 00.08
+          prob: 0.08
         - id: LLProvisions2
-          prob: 00.023
+          prob: 0.023
         - id: LLProvisions3
-          prob: 00.020
+          prob: 0.020
         - id: LLProvisions4
-          prob: 00.010
+          prob: 0.010
+        - id: LLClothingOuterHiveVest
+          prob: 0.1
+        - id: N14Gunpowder10
+          prob: 0.1
+        - id: N14JunkDuctTape
+          prob: 0.1
 
 - type: entity
   parent: LLBaseLootShelf
@@ -159,7 +165,7 @@
   - type: Sprite
     sprite: _LL/Objects/Box/box2.rsi
     netsync: false
-    state: icon  # Указываем состояние icon
+    state: icon
   - type: Tag
     tags:
     - Wooden
@@ -180,127 +186,133 @@
   - type: TimedStorageFill
     contents:
         - id: FoodTinBeans
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedStew
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedBeans
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinPeaches
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedFish
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinMRE
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedBeansTrash
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinMRETrash
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedFishTrash
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkTincan
-          prob: 00.1
+          prob: 0.1
         - id: LLCannedStewTrash
-          prob: 00.1
+          prob: 0.1
         - id: FoodTinPeachesTrash
-          prob: 00.1
+          prob: 0.1
         - id: N14FoodDogFoodTrash
-          prob: 00.1
+          prob: 0.1
         - id: SheetPlastic10
-          prob: 00.1
+          prob: 0.1
         - id: SheetGlass10
-          prob: 00.1
+          prob: 0.1
         - id: SheetSteel10
-          prob: 00.1
+          prob: 0.1
         - id: PartRodMetal10
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellSmallPrinted
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellMediumPrinted
-          prob: 00.1
+          prob: 0.1
         - id: PowerCellHighPrinted
-          prob: 00.1
+          prob: 0.1
         - id: CapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: MicroManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: MatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: AdvancedCapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: NanoManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: AdvancedMatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: SuperCapacitorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: PicoManipulatorStockPart
-          prob: 00.1
+          prob: 0.1
         - id: SuperMatterBinStockPart
-          prob: 00.1
+          prob: 0.1
         - id: Multitool
-          prob: 00.1
+          prob: 0.1
         - id: ClothingHeadHatWelding
-          prob: 00.1
+          prob: 0.1
         - id: Screwdriver
-          prob: 00.1
+          prob: 0.1
         - id: Wirecutter
-          prob: 00.1
+          prob: 0.1
         - id: Welder
-          prob: 00.1
+          prob: 0.1
         - id: Crowbar
-          prob: 00.1
+          prob: 0.1
         - id: Wrench
-          prob: 00.1
+          prob: 0.1
         - id: DrinkWaterBottleFull
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackWinston
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackKool
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackMarlboro
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackRepublics
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackSalem
-          prob: 00.1
+          prob: 0.1
         - id: N14CigarettePackCustom
-          prob: 00.1
+          prob: 0.1
         - id: FlippoLighter
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkComponentMainboard
-          prob: 00.1
+          prob: 0.1
         - id: N14JunkComponentSensor
-          prob: 00.1
+          prob: 0.1
         - id: ClothingHeadBrotherhoodScribeHeadset
-          prob: 00.1
+          prob: 0.1
         - id: EmptyFlashlightLantern
-          prob: 00.1
+          prob: 0.1
         - id: CellRechargerCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: ReagentGrinderMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: BiomassReclaimerMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: MicrowaveMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: OreProcessorMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: PortableGeneratorJrPacmanMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: APCElectronics
-          prob: 00.1
+          prob: 0.1
         - id: SubstationMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: SMESMachineCircuitboard
-          prob: 00.1
+          prob: 0.1
         - id: LLProvisions1
-          prob: 00.08
+          prob: 0.08
         - id: LLProvisions2
-          prob: 00.023
+          prob: 0.023
         - id: LLProvisions3
-          prob: 00.020
+          prob: 0.020
         - id: LLProvisions4
-          prob: 00.010
+          prob: 0.010
+        - id: LLClothingOuterHiveVest
+          prob: 0.1
+        - id: N14Gunpowder10
+          prob: 0.1
+        - id: N14JunkDuctTape
+          prob: 0.1
 
 - type: entity
   parent: LLBaseLootShelf
@@ -332,27 +344,27 @@
   - type: TimedStorageFill
     contents:
         - id: N14MaterialThread1
-          prob: 0.1
+          prob: 0.5
         - id: N14JunkCookpot
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapElectronic1
-          prob: 0.1
+          prob: 0.3
         - id: MaterialCloth10
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapSteel1
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapLead1
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapCopper1
-          prob: 0.1
+          prob: 0.3
         - id: MaterialCloth1
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapBrass1
-          prob: 0.1
+          prob: 0.3
         - id: N14ScrapGold1
           prob: 0.1
         - id: N14Scrap1
-          prob: 0.1
+          prob: 0.3
 
 # Базовый абстрактный шаблон для полок с лутом
 - type: entity
@@ -437,132 +449,137 @@
     tags:
     - Wooden
     - Resupply
-    - NoAnchor  # Добавляем тег для обозначения неоткрепляемости
-  # КОМПОНЕНТ Anchorable УБРАН - полка теперь неоткрепляемая
+    - NoAnchor
   - type: TimedStorageFill
     contents:
-      - id: FoodTinBeans
-        prob: 00.1
-      - id: LLCannedStew
-        prob: 00.1
-      - id: LLCannedBeans
-        prob: 00.1
-      - id: FoodTinPeaches
-        prob: 00.1
-      - id: LLCannedFish
-        prob: 00.1
-      - id: FoodTinMRE
-        prob: 00.1
-      - id: LLCannedBeansTrash
-        prob: 00.1
-      - id: FoodTinMRETrash
-        prob: 00.1
-      - id: LLCannedFishTrash
-        prob: 00.1
-      - id: N14JunkTincan
-        prob: 00.1
-      - id: LLCannedStewTrash
-        prob: 00.1
-      - id: FoodTinPeachesTrash
-        prob: 00.1
-      - id: N14FoodDogFoodTrash
-        prob: 00.1
-      - id: SheetPlastic10
-        prob: 00.1
-      - id: SheetGlass10
-        prob: 00.1
-      - id: SheetSteel10
-        prob: 00.1
-      - id: PartRodMetal10
-        prob: 00.1
-      - id: PowerCellSmallPrinted
-        prob: 00.1
-      - id: PowerCellMediumPrinted
-        prob: 00.1
-      - id: PowerCellHighPrinted
-        prob: 00.1
-      - id: CapacitorStockPart
-        prob: 00.1
-      - id: MicroManipulatorStockPart
-        prob: 00.1
-      - id: MatterBinStockPart
-        prob: 00.1
-      - id: AdvancedCapacitorStockPart
-        prob: 00.1
-      - id: NanoManipulatorStockPart
-        prob: 00.1
-      - id: AdvancedMatterBinStockPart
-        prob: 00.1
-      - id: SuperCapacitorStockPart
-        prob: 00.1
-      - id: PicoManipulatorStockPart
-        prob: 00.1
-      - id: SuperMatterBinStockPart
-        prob: 00.1
-      - id: Multitool
-        prob: 00.1
-      - id: ClothingHeadHatWelding
-        prob: 00.1
-      - id: Screwdriver
-        prob: 00.1
-      - id: Wirecutter
-        prob: 00.1
-      - id: Welder
-        prob: 00.1
-      - id: Crowbar
-        prob: 00.1
-      - id: Wrench
-        prob: 00.1
-      - id: DrinkWaterBottleFull
-        prob: 00.1
-      - id: N14CigarettePackWinston
-        prob: 00.1
-      - id: N14CigarettePackKool
-        prob: 00.1
-      - id: N14CigarettePackMarlboro
-        prob: 00.1
-      - id: N14CigarettePackRepublics
-        prob: 00.1
-      - id: N14CigarettePackSalem
-        prob: 00.1
-      - id: N14CigarettePackCustom
-        prob: 00.1
-      - id: FlippoLighter
-        prob: 00.1
-      - id: N14JunkComponentMainboard
-        prob: 00.1
-      - id: N14JunkComponentSensor
-        prob: 00.1
-      - id: ClothingHeadBrotherhoodScribeHeadset
-        prob: 00.1
-      - id: EmptyFlashlightLantern
-        prob: 00.1
-      - id: CellRechargerCircuitboard
-        prob: 00.1
-      - id: ReagentGrinderMachineCircuitboard
-        prob: 00.1
-      - id: BiomassReclaimerMachineCircuitboard
-        prob: 00.1
-      - id: MicrowaveMachineCircuitboard
-        prob: 00.1
-      - id: OreProcessorMachineCircuitboard
-        prob: 00.1
-      - id: PortableGeneratorJrPacmanMachineCircuitboard
-        prob: 00.1
-      - id: APCElectronics
-        prob: 00.1
-      - id: SubstationMachineCircuitboard
-        prob: 00.1
-      - id: SMESMachineCircuitboard
-        prob: 00.1
-      - id: LLProvisions1
-        prob: 00.08
-      - id: LLProvisions2
-        prob: 00.023
-      - id: LLProvisions3
-        prob: 00.020
-      - id: LLProvisions4
-        prob: 00.010
+        - id: FoodTinBeans
+          prob: 0.1
+        - id: LLCannedStew
+          prob: 0.1
+        - id: LLCannedBeans
+          prob: 0.1
+        - id: FoodTinPeaches
+          prob: 0.1
+        - id: LLCannedFish
+          prob: 0.1
+        - id: FoodTinMRE
+          prob: 0.1
+        - id: LLCannedBeansTrash
+          prob: 0.1
+        - id: FoodTinMRETrash
+          prob: 0.1
+        - id: LLCannedFishTrash
+          prob: 0.1
+        - id: N14JunkTincan
+          prob: 0.1
+        - id: LLCannedStewTrash
+          prob: 0.1
+        - id: FoodTinPeachesTrash
+          prob: 0.1
+        - id: N14FoodDogFoodTrash
+          prob: 0.1
+        - id: SheetPlastic10
+          prob: 0.1
+        - id: SheetGlass10
+          prob: 0.1
+        - id: SheetSteel10
+          prob: 0.1
+        - id: PartRodMetal10
+          prob: 0.1
+        - id: PowerCellSmallPrinted
+          prob: 0.1
+        - id: PowerCellMediumPrinted
+          prob: 0.1
+        - id: PowerCellHighPrinted
+          prob: 0.1
+        - id: CapacitorStockPart
+          prob: 0.1
+        - id: MicroManipulatorStockPart
+          prob: 0.1
+        - id: MatterBinStockPart
+          prob: 0.1
+        - id: AdvancedCapacitorStockPart
+          prob: 0.1
+        - id: NanoManipulatorStockPart
+          prob: 0.1
+        - id: AdvancedMatterBinStockPart
+          prob: 0.1
+        - id: SuperCapacitorStockPart
+          prob: 0.1
+        - id: PicoManipulatorStockPart
+          prob: 0.1
+        - id: SuperMatterBinStockPart
+          prob: 0.1
+        - id: Multitool
+          prob: 0.1
+        - id: ClothingHeadHatWelding
+          prob: 0.1
+        - id: Screwdriver
+          prob: 0.1
+        - id: Wirecutter
+          prob: 0.1
+        - id: Welder
+          prob: 0.1
+        - id: Crowbar
+          prob: 0.1
+        - id: Wrench
+          prob: 0.1
+        - id: DrinkWaterBottleFull
+          prob: 0.1
+        - id: N14CigarettePackWinston
+          prob: 0.1
+        - id: N14CigarettePackKool
+          prob: 0.1
+        - id: N14CigarettePackMarlboro
+          prob: 0.1
+        - id: N14CigarettePackRepublics
+          prob: 0.1
+        - id: N14CigarettePackSalem
+          prob: 0.1
+        - id: N14CigarettePackCustom
+          prob: 0.1
+        - id: FlippoLighter
+          prob: 0.1
+        - id: N14JunkComponentMainboard
+          prob: 0.1
+        - id: N14JunkComponentSensor
+          prob: 0.1
+        - id: ClothingHeadBrotherhoodScribeHeadset
+          prob: 0.1
+        - id: EmptyFlashlightLantern
+          prob: 0.1
+        - id: CellRechargerCircuitboard
+          prob: 0.1
+        - id: ReagentGrinderMachineCircuitboard
+          prob: 0.1
+        - id: BiomassReclaimerMachineCircuitboard
+          prob: 0.1
+        - id: MicrowaveMachineCircuitboard
+          prob: 0.1
+        - id: OreProcessorMachineCircuitboard
+          prob: 0.1
+        - id: PortableGeneratorJrPacmanMachineCircuitboard
+          prob: 0.1
+        - id: APCElectronics
+          prob: 0.1
+        - id: SubstationMachineCircuitboard
+          prob: 0.1
+        - id: SMESMachineCircuitboard
+          prob: 0.1
+        - id: LLProvisions1
+          prob: 0.08
+        - id: LLProvisions2
+          prob: 0.023
+        - id: LLProvisions3
+          prob: 0.020
+        - id: LLProvisions4
+          prob: 0.010
+        - id: LLClothingOuterHiveVest
+          prob: 0.1
+        - id: N14Gunpowder10
+          prob: 0.1
+        - id: N14JunkDuctTape
+          prob: 0.1
 
 # Полка с основным лутом
 - type: entity
@@ -573,19 +590,19 @@
   components:
   - type: Sprite
     sprite: _Nuclear14/Structures/Furniture/64x96_furniture.rsi
-    state: wood_shelf  
+    state: wood_shelf
     netsync: false
     noRot: false
-    offset: 0.5, 0.5  
+    offset: 0.5, 0.5
   - type: Transform
     anchored: true
-    noRot: false  
+    noRot: false
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,0.2,1.1,-0.3"  
+          bounds: "-0.1,0.2,1.1,-0.3"
         density: 60
         mask:
         - MachineMask
@@ -601,125 +618,131 @@
     damageModifierSet: Metal
   - type: TimedStorageFill
     contents:
-      - id: FoodTinBeans
-        prob: 00.1
-      - id: LLCannedStew
-        prob: 00.1
-      - id: LLCannedBeans
-        prob: 00.1
-      - id: FoodTinPeaches
-        prob: 00.1
-      - id: LLCannedFish
-        prob: 00.1
-      - id: FoodTinMRE
-        prob: 00.1
-      - id: LLCannedBeansTrash
-        prob: 00.1
-      - id: FoodTinMRETrash
-        prob: 00.1
-      - id: LLCannedFishTrash
-        prob: 00.1
-      - id: N14JunkTincan
-        prob: 00.1
-      - id: LLCannedStewTrash
-        prob: 00.1
-      - id: FoodTinPeachesTrash
-        prob: 00.1
-      - id: N14FoodDogFoodTrash
-        prob: 00.1
-      - id: SheetPlastic10
-        prob: 00.1
-      - id: SheetGlass10
-        prob: 00.1
-      - id: SheetSteel10
-        prob: 00.1
-      - id: PartRodMetal10
-        prob: 00.1
-      - id: PowerCellSmallPrinted
-        prob: 00.1
-      - id: PowerCellMediumPrinted
-        prob: 00.1
-      - id: PowerCellHighPrinted
-        prob: 00.1
-      - id: CapacitorStockPart
-        prob: 00.1
-      - id: MicroManipulatorStockPart
-        prob: 00.1
-      - id: MatterBinStockPart
-        prob: 00.1
-      - id: AdvancedCapacitorStockPart
-        prob: 00.1
-      - id: NanoManipulatorStockPart
-        prob: 00.1
-      - id: AdvancedMatterBinStockPart
-        prob: 00.1
-      - id: SuperCapacitorStockPart
-        prob: 00.1
-      - id: PicoManipulatorStockPart
-        prob: 00.1
-      - id: SuperMatterBinStockPart
-        prob: 00.1
-      - id: Multitool
-        prob: 00.1
-      - id: ClothingHeadHatWelding
-        prob: 00.1
-      - id: Screwdriver
-        prob: 00.1
-      - id: Wirecutter
-        prob: 00.1
-      - id: Welder
-        prob: 00.1
-      - id: Crowbar
-        prob: 00.1
-      - id: Wrench
-        prob: 00.1
-      - id: DrinkWaterBottleFull
-        prob: 00.1
-      - id: N14CigarettePackWinston
-        prob: 00.1
-      - id: N14CigarettePackKool
-        prob: 00.1
-      - id: N14CigarettePackMarlboro
-        prob: 00.1
-      - id: N14CigarettePackRepublics
-        prob: 00.1
-      - id: N14CigarettePackSalem
-        prob: 00.1
-      - id: N14CigarettePackCustom
-        prob: 00.1
-      - id: FlippoLighter
-        prob: 00.1
-      - id: N14JunkComponentMainboard
-        prob: 00.1
-      - id: N14JunkComponentSensor
-        prob: 00.1
-      - id: ClothingHeadBrotherhoodScribeHeadset
-        prob: 00.1
-      - id: EmptyFlashlightLantern
-        prob: 00.1
-      - id: CellRechargerCircuitboard
-        prob: 00.1
-      - id: ReagentGrinderMachineCircuitboard
-        prob: 00.1
-      - id: BiomassReclaimerMachineCircuitboard
-        prob: 00.1
-      - id: MicrowaveMachineCircuitboard
-        prob: 00.1
-      - id: OreProcessorMachineCircuitboard
-        prob: 00.1
-      - id: PortableGeneratorJrPacmanMachineCircuitboard
-        prob: 00.1
-      - id: APCElectronics
-        prob: 00.1
-      - id: SubstationMachineCircuitboard
-        prob: 00.1
-      - id: SMESMachineCircuitboard
-        prob: 00.1
-      - id: LLProvisions1
-        prob: 00.08
-      - id: LLProvisions2
-        prob: 00.023
-      - id: LLProvisions3
-        prob: 00.020
-      - id: LLProvisions4
-        prob: 00.010
+        - id: FoodTinBeans
+          prob: 0.1
+        - id: LLCannedStew
+          prob: 0.1
+        - id: LLCannedBeans
+          prob: 0.1
+        - id: FoodTinPeaches
+          prob: 0.1
+        - id: LLCannedFish
+          prob: 0.1
+        - id: FoodTinMRE
+          prob: 0.1
+        - id: LLCannedBeansTrash
+          prob: 0.1
+        - id: FoodTinMRETrash
+          prob: 0.1
+        - id: LLCannedFishTrash
+          prob: 0.1
+        - id: N14JunkTincan
+          prob: 0.1
+        - id: LLCannedStewTrash
+          prob: 0.1
+        - id: FoodTinPeachesTrash
+          prob: 0.1
+        - id: N14FoodDogFoodTrash
+          prob: 0.1
+        - id: SheetPlastic10
+          prob: 0.1
+        - id: SheetGlass10
+          prob: 0.1
+        - id: SheetSteel10
+          prob: 0.1
+        - id: PartRodMetal10
+          prob: 0.1
+        - id: PowerCellSmallPrinted
+          prob: 0.1
+        - id: PowerCellMediumPrinted
+          prob: 0.1
+        - id: PowerCellHighPrinted
+          prob: 0.1
+        - id: CapacitorStockPart
+          prob: 0.1
+        - id: MicroManipulatorStockPart
+          prob: 0.1
+        - id: MatterBinStockPart
+          prob: 0.1
+        - id: AdvancedCapacitorStockPart
+          prob: 0.1
+        - id: NanoManipulatorStockPart
+          prob: 0.1
+        - id: AdvancedMatterBinStockPart
+          prob: 0.1
+        - id: SuperCapacitorStockPart
+          prob: 0.1
+        - id: PicoManipulatorStockPart
+          prob: 0.1
+        - id: SuperMatterBinStockPart
+          prob: 0.1
+        - id: Multitool
+          prob: 0.1
+        - id: ClothingHeadHatWelding
+          prob: 0.1
+        - id: Screwdriver
+          prob: 0.1
+        - id: Wirecutter
+          prob: 0.1
+        - id: Welder
+          prob: 0.1
+        - id: Crowbar
+          prob: 0.1
+        - id: Wrench
+          prob: 0.1
+        - id: DrinkWaterBottleFull
+          prob: 0.1
+        - id: N14CigarettePackWinston
+          prob: 0.1
+        - id: N14CigarettePackKool
+          prob: 0.1
+        - id: N14CigarettePackMarlboro
+          prob: 0.1
+        - id: N14CigarettePackRepublics
+          prob: 0.1
+        - id: N14CigarettePackSalem
+          prob: 0.1
+        - id: N14CigarettePackCustom
+          prob: 0.1
+        - id: FlippoLighter
+          prob: 0.1
+        - id: N14JunkComponentMainboard
+          prob: 0.1
+        - id: N14JunkComponentSensor
+          prob: 0.1
+        - id: ClothingHeadBrotherhoodScribeHeadset
+          prob: 0.1
+        - id: EmptyFlashlightLantern
+          prob: 0.1
+        - id: CellRechargerCircuitboard
+          prob: 0.1
+        - id: ReagentGrinderMachineCircuitboard
+          prob: 0.1
+        - id: BiomassReclaimerMachineCircuitboard
+          prob: 0.1
+        - id: MicrowaveMachineCircuitboard
+          prob: 0.1
+        - id: OreProcessorMachineCircuitboard
+          prob: 0.1
+        - id: PortableGeneratorJrPacmanMachineCircuitboard
+          prob: 0.1
+        - id: APCElectronics
+          prob: 0.1
+        - id: SubstationMachineCircuitboard
+          prob: 0.1
+        - id: SMESMachineCircuitboard
+          prob: 0.1
+        - id: LLProvisions1
+          prob: 0.08
+        - id: LLProvisions2
+          prob: 0.023
+        - id: LLProvisions3
+          prob: 0.020
+        - id: LLProvisions4
+          prob: 0.010
+        - id: LLClothingOuterHiveVest
+          prob: 0.1
+        - id: N14Gunpowder10
+          prob: 0.1
+        - id: N14JunkDuctTape
+          prob: 0.1

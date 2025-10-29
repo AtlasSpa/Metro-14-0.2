@@ -1,0 +1,35 @@
+- type: latheRecipe
+  id: LLClothingOuterSalvArmor
+  result: LLClothingOuterSalvArmor
+  completetime: 30
+  materials:
+    Leather: 4500
+    ScrapSteel: 400
+    Scrap: 800
+    Thread: 2000
+
+- type: latheRecipe
+  id: LLClothingHeadHatSalvArmorHelmet
+  result: LLClothingHeadHatSalvArmorHelmet
+  completetime: 20
+  materials:
+    Scrap: 1000
+
+- type: latheRecipe
+  id: LLClothingOuterMakeshiftVest
+  result: LLClothingOuterMakeshiftVest
+  completetime: 25
+  materials:
+    Leather: 4500
+    Scrap: 800
+    Thread: 2000
+
+- type: latheRecipe
+  id: LLClothingOuterScavengerCloak
+  result: LLClothingOuterScavengerCloak
+  completetime: 35
+  materials:
+    Leather: 7500
+    Scrap: 500
+    Thread: 1000
+    Cloth: 6000

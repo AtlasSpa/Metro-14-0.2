@@ -1,0 +1,152 @@
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterSalvArmor
+  name: утиль-латы
+  description: Прочная броня созданная из подручных средств.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Armor/salvarmor.rsi
+  - type: Clothing
+    equipDelay: 3
+    unequipDelay: 6
+    sprite: _LL/Entities/Armor/salvarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.7
+        Radiation: 0.8
+        Caustic: 0.8
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LLClothingHeadHatSalvArmorHelmet
+  name: шлем утиль-лат
+  description: Металлолом скрученный в шлем и имеющий вырез под глаза.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Armor/salvarmorhelmet.rsi
+  - type: Clothing
+    sprite: _LL/Entities/Armor/salvarmorhelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.9
+        Piercing: 0.9
+    priceMultiplier: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    force: true
+    slots:
+    - Hair
+    - FacialHair
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterMakeshiftVest
+  name: самодельный бронежилет
+  description: Бронежилет кустарного производства. Кажется, можно использовать для создания брони по-лучше.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Armor/makeshiftvest.rsi
+  - type: Clothing
+    equipDelay: 1
+    unequipDelay: 1
+    sprite: _LL/Entities/Armor/makeshiftvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+        Radiation: 0.85
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Item
+    size: Huge
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterHiveVest
+  name: советский плитник
+  description: Базовый плитник 6Б5 "Улей" в модификации 6Б5-12.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Armor/hivevest.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    sprite: _LL/Entities/Armor/hivevest.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.75
+        Radiation: 0.8
+        Caustic: 0.85
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Item
+    size: Huge
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterScavengerCloak
+  name: плащ мусорщика
+  description: Улучшенный самодельный бронежилет. Дополнен двумя подсумками и кожей.
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Armor/scavengercloak.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    sprite: _LL/Entities/Armor/scavengercloak.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,2
+    - 3,0,4,2
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Item
+    size: Ginormous
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.75
+        Piercing: 0.8
+        Heat: 0.75
+        Radiation: 0.8
+        Caustic: 0.85
+        Shock: 0.9
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+
+
