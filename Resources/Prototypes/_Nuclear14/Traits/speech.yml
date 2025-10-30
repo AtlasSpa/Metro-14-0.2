@@ -1,88 +1,88 @@
 - type: trait
   id: LanguageChinese
   category: Speech
-  points: -3
+  points: 0 #LL change
   functions:
   - !type:TraitModifyLanguages
     languagesSpoken:
     - Chinese
     languagesUnderstood:
     - Chinese
-
-- type: trait
-  id: LanguageTribal
-  category: Speech
-  points: -3
-  requirements:
-  - !type:CharacterDepartmentRequirement
-    inverted: true
-    departments:
-    - Tribe
-  - !type:CharacterJobRequirement
-    jobs:
-    - NCRRanger
-    - NCRRangerVeteran
-  functions:
-  - !type:TraitModifyLanguages
-    languagesSpoken:
-    - Tribal
-    languagesUnderstood:
-    - Tribal
-
+#LL change start
+#- type: trait
+#  id: LanguageTribal
+#  category: Speech
+#  points: -3
+#  requirements:
+#  - !type:CharacterDepartmentRequirement
+#    inverted: true
+#    departments:
+#    - Tribe
+#  - !type:CharacterJobRequirement
+#    jobs:
+#    - NCRRanger
+#    - NCRRangerVeteran
+#  functions:
+#  - !type:TraitModifyLanguages
+#    languagesSpoken:
+#    - Tribal
+#    languagesUnderstood:
+#    - Tribal
+#LL change end
 - type: trait
   id: N14SignLanguage
   category: Speech
-  points: -2
+  points: 0 #LL change
   functions:
   - !type:TraitModifyLanguages
     languagesSpoken:
     - Sign
     languagesUnderstood:
     - Sign
-
-- type: trait
-  id: N14BrotherBeep
-  category: Speech
-  points: -2
-  requirements:
-  - !type:CharacterTraitRequirement
-    inverted: true
-    traits:
-    - N14ExtremeAugKnight
-    - N14ExtremeAugScribe
-    - N14ExtremeAugPaladin
-  - !type:CharacterDepartmentRequirement
-    departments:
-    - BrotherhoodMidwest
-  functions:
-  - !type:TraitModifyLanguages
-    languagesSpoken:
-    languagesUnderstood:
-    - N14BrotherBeep
-
+#LL change start
+#- type: trait
+#  id: N14BrotherBeep
+#  category: Speech
+#  points: -2
+#  requirements:
+#  - !type:CharacterTraitRequirement
+#    inverted: true
+#    traits:
+#    - N14ExtremeAugKnight
+#    - N14ExtremeAugScribe
+#    - N14ExtremeAugPaladin
+#  - !type:CharacterDepartmentRequirement
+#    departments:
+#    - BrotherhoodMidwest
+#  functions:
+#  - !type:TraitModifyLanguages
+#    languagesSpoken:
+#    languagesUnderstood:
+#    - N14BrotherBeep
+#LL change end
 - type: trait
   id: N14Muted
   category: Speech
   points: 2 # Forge-Change
   requirements:
-  - !type:CharacterJobRequirement
-    inverted: true
-    jobs:
-    - WastelandReporter
-    - TribalElder
-    - TownMayor
-    - TownSheriff
-    - NCRLT
-    - NCRRangerVeteran
-    - NCRRanger # Forge-Change
-    - NCRSGT
+#  - !type:CharacterJobRequirement #LL change start
+#    inverted: true
+#    jobs:
+#    - WastelandReporter 
+#    - TribalElder
+#    - TownMayor
+#    - TownSheriff
+#    - NCRLT
+#    - NCRRangerVeteran
+#    - NCRRanger # Forge-Change
+#    - NCRSGT
 #    - CaravanLeader
-    - BoSWashingtonCommander
-    - BoSWashingtonPaladin
-    - BoSMidPaladinCommander
-    - BoSMidPaladin
-    - Overseer
-    - VaultSecurity
+#    - BoSWashingtonCommander
+#    - BoSWashingtonPaladin
+#    - BoSMidPaladinCommander
+#    - BoSMidPaladin
+#    - Overseer
+#    - VaultSecurity #LL change end
   - !type:CharacterTraitRequirement
     inverted: true
     traits:

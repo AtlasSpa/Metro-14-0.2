@@ -1,7 +1,7 @@
 - type: species
   id: Ghoul
   name: species-name-ghoul
-  roundStart: true
+  roundStart: false
   prototype: N14MobGhoul
   sprites: N14MobGhoulSprites
   markingLimits: MobGhoulMarkingLimits

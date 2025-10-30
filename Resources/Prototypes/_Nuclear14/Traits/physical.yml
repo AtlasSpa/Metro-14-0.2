@@ -32,27 +32,27 @@
       flatDamageIncrease:
         types:
           Blunt: 2
-
-- type: trait
-  id: N14RadClaws
-  category: Physical
-  points: -2
-  requirements:
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14PillowKnuckles
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Ghoul
-        - GhoulGlowing
-  functions:
-    - !type:TraitModifyUnarmed
-      flatDamageIncrease:
-        types:
-          Slash: 1
-          Radiation: 1
-
+#LL change start
+#- type: trait
+#  id: N14RadClaws
+#  category: Physical
+#  points: -2
+#  requirements:
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14PillowKnuckles
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Ghoul
+#        - GhoulGlowing
+#  functions:
+#    - !type:TraitModifyUnarmed
+#      flatDamageIncrease:
+#        types:
+#          Slash: 1
+#          Radiation: 1
+#LL change end
 - type: trait
   id: N14WeakLiquor
   category: Physical
@@ -345,67 +345,67 @@
       components:
         - type: StaminaDamageOnHit
           damage: 8
-
-- type: trait
-  id: N14GammaShield
-  category: Physical
-  points: -8
-  requirements:
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Ghoul
-        - GhoulGlowing
-  functions:
-    - !type:TraitAddArmor
-      damageModifierSets:
-        - N14GammaShield
+#LL change start
+#- type: trait
+#  id: N14GammaShield
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Ghoul
+#        - GhoulGlowing
+#  functions:
+#    - !type:TraitAddArmor
+#      damageModifierSets:
+#        - N14GammaShield
 
 # Agumentations and implants start here
-- type: trait
-  id: N14HandyTools
-  category: Physical
-  points: -5
-  requirements:
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14ExtremeAugKnight
-        - N14ExtremeAugScribe
-  functions:
-    - !type:TraitAddComponent
-      components:
-        - type: Prying
-          speedModifier: 0.75
+#- type: trait
+#  id: N14HandyTools
+#  category: Physical
+#  points: -5
+#  requirements:
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#     traits:
+#        - N14ExtremeAugKnight
+#        - N14ExtremeAugScribe
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: Prying
+#          speedModifier: 0.75
 
 - type: trait
   id: N14DermalArmorWaster
   category: Physical
   points: -8
-  requirements:
-    - !type:CharacterJobRequirement
-      inverted: true
-      jobs:
-        - BoSMidPaladinCommander
-        - BoSMidPaladin
-        - BoSMidKnight
-        - BoSWashingtonCommander
-        - BoSWashingtonPaladin
-        - BoSWashingtonKnight
-        - VaultDoctor
-        - VaultDweller
-        - VaultEngineer
-        - TribalElder
-        - Tribal
-        - TribalFarmer
-        - TribalHealer
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmor
-        - N14PhoenixArmor
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
+#  requirements:
+#    - !type:CharacterJobRequirement #LL change start
+#      inverted: true
+#      jobs:
+#        - BoSMidPaladinCommander
+#        - BoSMidPaladin
+#        - BoSMidKnight
+#        - BoSWashingtonCommander
+#        - BoSWashingtonPaladin
+#        - BoSWashingtonKnight
+#        - VaultDoctor
+#        - VaultDweller
+#        - VaultEngineer
+#        - TribalElder
+#        - Tribal
+#        - TribalFarmer
+#        - TribalHealer
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmor
+#        - N14PhoenixArmor
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human #LL change end
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
@@ -415,161 +415,162 @@
   id: N14DermalArmor
   category: Physical
   points: -6
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - BoSMidPaladinCommander
-        - BoSMidPaladin
-        - BoSMidKnight
-        - BoSWashingtonCommander
-        - BoSWashingtonPaladin
-        - BoSWashingtonKnight
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmorWaster
-        - N14PhoenixArmor
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
+#  requirements:
+#    - !type:CharacterJobRequirement #LL change start
+#      jobs:
+#        - BoSMidPaladinCommander
+#        - BoSMidPaladin
+#        - BoSMidKnight
+#        - BoSWashingtonCommander
+#        - BoSWashingtonPaladin
+#        - BoSWashingtonKnight
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmorWaster
+#        - N14PhoenixArmor
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human #LL change end
   functions:
     - !type:TraitAddArmor
       damageModifierSets:
         - N14DermalArmor
-
+#LL change start
 # Midwestern chapter-only augmentations
-- type: trait
-  id: N14PhoenixArmor
-  category: Physical
-  points: -6
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - BoSMidPaladinCommander
-        - BoSMidPaladin
-        - BoSMidKnight
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmorWaster
-        - N14DermalArmor
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
-  functions:
-    - !type:TraitAddArmor
-      damageModifierSets:
-        - N14PhoenixArmor
+#- type: trait
+#  id: N14PhoenixArmor
+#  category: Physical
+#  points: -6
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - BoSMidPaladinCommander
+#        - BoSMidPaladin
+#        - BoSMidKnight
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmorWaster
+#        - N14DermalArmor
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human
+#  functions:
+#    - !type:TraitAddArmor
+#      damageModifierSets:
+#        - N14PhoenixArmor
 
 # Washington chapter-only augmentations
-- type: trait
-  id: N14ExtremeAugKnight
-  category: Physical
-  points: -8
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - BoSWashingtonKnight
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmor
-        - N14HandyTools
-        - N14IronFist
-        - N14PillowKnuckles
-        - N14SilentTakedown
-        - N14BrotherBeep
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
-  functions:
-    - !type:TraitModifyUnarmed
-      flatDamageIncrease:
-        types:
-          Blunt: 1
-    - !type:TraitAddComponent
-      components:
-        - type: Prying
-          speedModifier: 0.75
-        - type: StaminaDamageOnHit
-          damage: 6
-    - !type:TraitModifyLanguages
-      languagesSpoken:
-        - N14BrotherBeep
-      languagesUnderstood:
-        - N14BrotherBeep
+#- type: trait
+#  id: N14ExtremeAugKnight
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - BoSWashingtonKnight
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmor
+#        - N14HandyTools
+#        - N14IronFist
+#        - N14PillowKnuckles
+#        - N14SilentTakedown
+#        - N14BrotherBeep
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human
+#  functions:
+#    - !type:TraitModifyUnarmed
+#      flatDamageIncrease:
+#        types:
+#          Blunt: 1
+#    - !type:TraitAddComponent
+#      components:
+#        - type: Prying
+#          speedModifier: 0.75
+#        - type: StaminaDamageOnHit
+#          damage: 6
+#    - !type:TraitModifyLanguages
+#      languagesSpoken:
+#        - N14BrotherBeep
+#      languagesUnderstood:
+#        - N14BrotherBeep
 
-- type: trait
-  id: N14ExtremeAugScribe
-  category: Physical
-  points: -8
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - BoSWashingtonScribe
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmor
-        - N14GammaShield
-        - N14GooglyEyes
-        - N14HandyTools
-        - N14BrotherBeep
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
-        - Ghoul
-  functions:
-    - !type:TraitAddComponent
-      components:
-        - type: FlashImmunity
-        - type: EyeProtection
-        - type: SurgerySpeedModifier
-          speedModifier: 1.33
-    - !type:TraitModifyLanguages
-      languagesSpoken:
-        - N14BrotherBeep
-      languagesUnderstood:
-        - N14BrotherBeep
-
-- type: trait
-  id: N14ExtremeAugPaladin
-  category: Physical
-  points: -8
-  requirements:
-    - !type:CharacterJobRequirement
-      jobs:
-        - BoSWashingtonCommander
-        - BoSWashingtonPaladin
-    - !type:CharacterTraitRequirement
-      inverted: true
-      traits:
-        - N14DermalArmor
-        - N14GammaShield
-        - N14GooglyEyes
-        - N14HandyTools
-        - N14IronFist
-        - N14PillowKnuckles
-        - N14RadClaws
-        - N14SilentTakedown
-        - N14BrotherBeep
-    - !type:CharacterSpeciesRequirement
-      species:
-        - Human
-        - Ghoul
-  functions:
-    - !type:TraitModifyUnarmed
-      flatDamageIncrease:
-        types:
-          Blunt: 1
-    - !type:TraitAddComponent
-      components:
-        - type: FlashImmunity
-        - type: EyeProtection
-        - type: StaminaDamageOnHit
-          damage: 6
-    - !type:TraitModifyLanguages
-      languagesSpoken:
-        - N14BrotherBeep
-      languagesUnderstood:
-        - N14BrotherBeep
+#- type: trait
+#  id: N14ExtremeAugScribe
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - BoSWashingtonScribe
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmor
+#        - N14GammaShield
+#        - N14GooglyEyes
+#        - N14HandyTools
+#        - N14BrotherBeep
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human
+#        - Ghoul
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: FlashImmunity
+#        - type: EyeProtection
+#        - type: SurgerySpeedModifier
+#          speedModifier: 1.33
+#    - !type:TraitModifyLanguages
+#      languagesSpoken:
+#        - N14BrotherBeep
+#      languagesUnderstood:
+#        - N14BrotherBeep
+#
+#- type: trait
+#  id: N14ExtremeAugPaladin
+#  category: Physical
+#  points: -8
+#  requirements:
+#    - !type:CharacterJobRequirement
+#      jobs:
+#        - BoSWashingtonCommander
+#        - BoSWashingtonPaladin
+#    - !type:CharacterTraitRequirement
+#      inverted: true
+#      traits:
+#        - N14DermalArmor
+#        - N14GammaShield
+#        - N14GooglyEyes
+#        - N14HandyTools
+#        - N14IronFist
+#        - N14PillowKnuckles
+#        - N14RadClaws
+#        - N14SilentTakedown
+#        - N14BrotherBeep
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#        - Human
+#        - Ghoul
+#  functions:
+#    - !type:TraitModifyUnarmed
+#      flatDamageIncrease:
+#        types:
+#          Blunt: 1
+#    - !type:TraitAddComponent
+#      components:
+#        - type: FlashImmunity
+#        - type: EyeProtection
+#        - type: StaminaDamageOnHit
+#          damage: 6
+#    - !type:TraitModifyLanguages
+#      languagesSpoken:
+#        - N14BrotherBeep
+#      languagesUnderstood:
+#        - N14BrotherBeep
+#LL change end
