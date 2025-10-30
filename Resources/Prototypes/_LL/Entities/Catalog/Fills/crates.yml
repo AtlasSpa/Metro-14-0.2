@@ -1,6 +1,7 @@
 - type: entity
   parent: LLBaseLootShelf
   id: LLBoxTimedResupply
+  suffix: metro рандом
   name: старый ящик
   description: в нём явно, что-то будет.
   components:
@@ -159,6 +160,7 @@
 - type: entity
   parent: LLBaseLootShelf
   id: LLBoxTimedResupply2
+  suffix: metro рандом
   name: старый ящик
   description: в нём явно, что-то будет.
   components:
@@ -317,6 +319,7 @@
 - type: entity
   parent: LLBaseLootShelf
   id: LLShelfJunk
+  suffix: metro рандом
   name: куча с хламом
   description: В ней явно что-то будет.
   components:
@@ -369,6 +372,7 @@
 # Базовый абстрактный шаблон для полок с лутом
 - type: entity
   id: LLBaseLootShelf
+  suffix: metro рандом
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -437,6 +441,7 @@
 # Полка с основным лутом (провизия, инструменты, электроника) - НЕОТКРЕПЛЯЕМАЯ
 - type: entity
   id: LLShelfResupply
+  suffix: metro рандом
   parent: LLBaseLootShelf
   name: старая полка
   description: на нёй явно, что-то будет.
@@ -584,6 +589,7 @@
 # Полка с основным лутом
 - type: entity
   id: LLShelfResupplyMetal
+  suffix: metro рандом
   parent: LLBaseLootShelf
   name: старая полка
   description: Прочная металлическая полка с припасами.
@@ -746,3 +752,36 @@
           prob: 0.1
         - id: N14JunkDuctTape
           prob: 0.1
+
+- type: entity
+  parent: LLBaseLootShelf
+  id: LLBoxTimedResupplyArmy
+  suffix: metro рандом оружие броня
+  name: старый армейский ящик
+  description: в нём явно, что-то будет.
+  components:
+  - type: Sprite
+    sprite: _LL/Objects/Box/box3.rsi
+    netsync: false
+    state: icon
+  - type: Tag
+    tags:
+    - Wooden
+    - Resupply
+    - NoAnchor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 50
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: TimedStorageFill
+    contents:
+        - id: LLClothingOuterHiveVest
+          prob: 0.2

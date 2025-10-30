@@ -27,6 +27,7 @@
 - type: entity
   name: Спавнер Жук-Паук # маленький
   id: LLSpawnerMobBeetlelegsSmall
+  suffix: маленький
   parent: MarkerBase
   components:
   - type: Sprite
