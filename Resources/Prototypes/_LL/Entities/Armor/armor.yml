@@ -5,14 +5,14 @@
   description: Прочная броня созданная из подручных средств.
   components:
   - type: Sprite
-    sprite: _LL/Entities/Armor/salvarmor.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/salvarmor.rsi
   - type: Clothing
     equipDelay: 3
     unequipDelay: 6
-    sprite: _LL/Entities/Armor/salvarmor.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/salvarmor.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: Armor
     modifiers:
       coefficients:
@@ -35,9 +35,9 @@
   description: Металлолом скрученный в шлем и имеющий вырез под глаза.
   components:
   - type: Sprite
-    sprite: _LL/Entities/Armor/salvarmorhelmet.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/salvarmorhelmet.rsi
   - type: Clothing
-    sprite: _LL/Entities/Armor/salvarmorhelmet.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/salvarmorhelmet.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -63,11 +63,11 @@
   description: Бронежилет кустарного производства. Кажется, можно использовать для создания брони по-лучше.
   components:
   - type: Sprite
-    sprite: _LL/Entities/Armor/makeshiftvest.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi
   - type: Clothing
     equipDelay: 1
     unequipDelay: 1
-    sprite: _LL/Entities/Armor/makeshiftvest.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/makeshiftvest.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -89,11 +89,11 @@
   description: Базовый плитник 6Б5 "Улей" в модификации 6Б5-12.
   components:
   - type: Sprite
-    sprite: _LL/Entities/Armor/hivevest.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/hivevest.rsi
   - type: Clothing
     equipDelay: 1.5
     unequipDelay: 1.5
-    sprite: _LL/Entities/Armor/hivevest.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/hivevest.rsi
   - type: TemperatureProtection
     coefficient: 0.1
   - type: Armor
@@ -118,11 +118,11 @@
   description: Улучшенный самодельный бронежилет. Дополнен двумя подсумками и кожей.
   components:
   - type: Sprite
-    sprite: _LL/Entities/Armor/scavengercloak.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/scavengercloak.rsi
   - type: Clothing
     equipDelay: 1.5
     unequipDelay: 1.5
-    sprite: _LL/Entities/Armor/scavengercloak.rsi
+    sprite: _LL/Clothing/OuterClothing/Armor/scavengercloak.rsi
   - type: Storage
     grid:
     - 0,0,1,2
@@ -149,4 +149,118 @@
   - type: ExplosionResistance
     damageCoefficient: 0.2
 
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuteMilitiamanArmor
+  name: бронежилет ополченца
+  description: Стильно? Да. Защитит от пули? Возможно.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/OuterClothing/Armor/militiaman.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    sprite: _LL/Clothing/OuterClothing/Armor/militiaman.rsi
+  - type: Item
+    size: Ginormous
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.7
+        Piercing: 0.65
+        Heat: 0.9
+        Radiation: 0.8
+        Shock: 0.9
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
 
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterHunterArmor
+  name: латы охотника
+  description: Должен защитить от очередного мутанта вышедшего из щели.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/OuterClothing/Armor/hunterarmor.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    sprite: _LL/Clothing/OuterClothing/Armor/hunterarmor.rsi
+  - type: Item
+    size: Ginormous
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.65
+        Piercing: 0.8
+        Heat: 0.7
+        Radiation: 0.65
+        Caustic: 0.8
+        Shock: 0.85
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LLClothingHeadHatHunterArmorHelmet
+  name: шлем лат охотника
+  description: Металлолом скрученный в шлем и имеющий вырез под глаза.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/OuterClothing/Armor/hunterarmorhelmet.rsi
+  - type: Clothing
+    sprite: _LL/Clothing/OuterClothing/Armor/hunterarmorhelmet.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.85
+        Piercing: 0.95
+    priceMultiplier: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    force: true
+    slots:
+    - Hair
+    - FacialHair
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: LLClothingOuterBeastSlayerArmor
+  name: латы зверобоя
+  description: Зверобой, волкодав.
+  components:
+  - type: Sprite
+    sprite: _LL/Clothing/OuterClothing/Armor/beastslayer.rsi
+  - type: Clothing
+    equipDelay: 1.5
+    unequipDelay: 1.5
+    sprite: _LL/Clothing/OuterClothing/Armor/beastslayer.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.5
+        Piercing: 0.65
+        Heat: 0.55
+        Radiation: 0.6
+        Caustic: 0.6
+        Shock: 0.7
+    priceMultiplier: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
