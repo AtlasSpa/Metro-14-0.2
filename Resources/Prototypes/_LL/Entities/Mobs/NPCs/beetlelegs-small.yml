@@ -77,6 +77,8 @@
     spawned:
     - id: N14FoodMeatRadscorpion
       amount: 2
+    - id: N14MaterialAntChitin1
+      amount: 2
   - type: Tag
     tags:
     - Beetlelegs

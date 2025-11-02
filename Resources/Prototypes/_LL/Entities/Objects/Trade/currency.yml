@@ -85,6 +85,17 @@
 
 - type: entity
   parent: LLMetruble
+  id: LLMetruble200
+  suffix: 200
+  components:
+  - type: Icon
+    sprite: _Nuclear14/Objects/Misc/currency.rsi
+    state: prewar3
+  - type: Stack
+    count: 200
+
+- type: entity
+  parent: LLMetruble
   id: LLMetruble500
   suffix: 500
   components:

@@ -65,6 +65,8 @@
     spawned:
     - id: GrenadeDummy
       amount: 1
+    - id: N14MaterialRawLeather1
+      amount: 1
   - type: Tag
     tags:
     - Fototoxisch

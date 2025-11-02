@@ -1,0 +1,14 @@
+- type: entity
+  parent: N14MobHumanFollowers
+  id: LLMobHumanMetroResident
+  name: Житель Метро
+  components:
+    - type: Icon
+      state: survivor
+    - type: RandomHumanoidAppearance
+      randomizeName: true
+    - type: Loadout
+      prototypes: [LLMetroResident]
+    - type: NpcFactionMember
+      factions:
+      - Metro

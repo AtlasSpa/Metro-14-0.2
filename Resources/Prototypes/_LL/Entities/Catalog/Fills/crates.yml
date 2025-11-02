@@ -160,6 +160,16 @@
           prob: 0.1
         - id: MaterialCloth1
           prob: 0.1
+        - id: LLMaterialTitanium1
+          prob: 0.1
+        - id: LLMaterialChainmail1
+          prob: 0.1
+        - id: LLMaterialAramid1
+          prob: 0.1
+        - id: LLMaterialFiberglass1
+          prob: 0.1
+        - id: LLMaterialAsbestos1
+          prob: 0.1
 
 - type: entity
   parent: LLBaseLootShelf
@@ -318,6 +328,16 @@
         - id: N14SackCompostFull
           prob: 0.1
         - id: N14SackFertilizerFull
+          prob: 0.1
+        - id: LLMaterialTitanium1
+          prob: 0.1
+        - id: LLMaterialChainmail1
+          prob: 0.1
+        - id: LLMaterialAramid1
+          prob: 0.1
+        - id: LLMaterialFiberglass1
+          prob: 0.1
+        - id: LLMaterialAsbestos1
           prob: 0.1
 
 - type: entity
@@ -602,6 +622,16 @@
           prob: 0.1
         - id: N14JunkDuctTape
           prob: 0.1
+        - id: LLMaterialTitanium1
+          prob: 0.1
+        - id: LLMaterialChainmail1
+          prob: 0.1
+        - id: LLMaterialAramid1
+          prob: 0.1
+        - id: LLMaterialFiberglass1
+          prob: 0.1
+        - id: LLMaterialAsbestos1
+          prob: 0.1
 
 # Полка с основным лутом
 - type: entity
@@ -765,6 +795,16 @@
           prob: 0.1
         - id: N14JunkDuctTape
           prob: 0.1
+        - id: LLMaterialTitanium1
+          prob: 0.1
+        - id: LLMaterialChainmail1
+          prob: 0.1
+        - id: LLMaterialAramid1
+          prob: 0.1
+        - id: LLMaterialFiberglass1
+          prob: 0.1
+        - id: LLMaterialAsbestos1
+          prob: 0.1
 
 - type: entity
   parent: LLBaseLootShelf
@@ -825,6 +865,24 @@
         - id: PortafibEmpty
           prob: 0.001
         - id: BodyBagFolded
+          prob: 0.3
+        - id: SyringeInaprovaline
+          prob: 0.3
+        - id: SyringeBicaridine
+          prob: 0.3
+        - id: SyringeDermaline
+          prob: 0.3
+        - id: SyringeBicaridine
+          prob: 0.3
+        - id: SyringeEphedrine
+          prob: 0.3
+        - id: SyringePhalanximine
+          prob: 0.3
+        - id: SyringeHyronalin
+          prob: 0.3
+        - id: SyringeSaline
+          prob: 0.3
+        - id: RadAutoInjector
           prob: 0.3
 
 - type: entity

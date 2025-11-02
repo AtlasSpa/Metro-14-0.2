@@ -1,0 +1,20 @@
+- type: job
+  id: MetroResident
+  name: Житель Метро
+  description: Выжить
+  playTimeTracker: JobMetroResident
+  startingGear: LLMetroResident
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-nobody
+  departments: [Metro]
+
+- type: startingGear
+  id: LLMetroResident
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitLoungewear
+    shoes: N14ClothingShoesRags
+    outerClothing: N14ClothingOuterCoatDuster
+    belt: ClothingBeltStorageWaistbag
+    id: LLWallet
+    pocket1: LLMetruble200
+    pocket2: CombatKnife
