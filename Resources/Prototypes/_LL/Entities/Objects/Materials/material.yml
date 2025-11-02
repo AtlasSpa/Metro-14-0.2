@@ -1,0 +1,255 @@
+#МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialFiberglass
+  name: стеклоткань
+  description: Прочная ткань из стеклянных волокон, обладающая высокой термостойкостью и механической прочностью.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/fiberglass.rsi
+    state: glasswool_1
+    layers:
+    - state: glasswool_1
+      map: ["base"]
+  - type: Stack
+    stackType: LLFiberglass
+    count: 15
+    baseLayer: base
+    layerStates:
+    - glasswool_1
+    - glasswool_2
+    - glasswool_3
+  - type: PhysicalComposition
+    materialComposition:
+      LLFiberglass: 100
+
+- type: entity
+  parent: LLMaterialFiberglass
+  id: LLMaterialFiberglass1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+#МАТЕРИАЛЫ (В РЕАГЕНТАХ)
+- type: material
+  id: LLFiberglass
+  stackEntity: LLMaterialFiberglass1
+  unit: materials-unit-roll
+  name: Стеклоткань
+  icon: { sprite: /Textures/_LL/Entities/Materials/fiberglass.rsi, state: glasswool_1 }
+  color: "#F0F0F0"
+  price: 0.08
+
+#СТАКИ
+- type: stack
+  id: LLFiberglass
+  name: Стеклоткань
+  icon: { sprite: _LL/Entities/Materials/fiberglass.rsi, state: glasswool_1 }
+  spawn: LLMaterialFiberglass1
+  maxCount: 15
+  itemSize: 1
+
+#МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialChainmail
+  name: кольчуга
+  description: Гибкая металлическая броня из переплетенных колец, обеспечивающая хорошую защиту от режущих ударов.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/chainmail.rsi
+    state: chainmail_1
+    layers:
+    - state: chainmail_1
+      map: ["base"]
+  - type: Stack
+    stackType: LLChainmail
+    count: 2
+    baseLayer: base
+    layerStates:
+    - chainmail_1
+    - chainmail_2
+  - type: PhysicalComposition
+    materialComposition:
+      LLChainmail: 100
+
+- type: entity
+  parent: LLMaterialChainmail
+  id: LLMaterialChainmail1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+#МАТЕРИАЛЫ (В РЕАГЕНТАХ)
+- type: material
+  id: LLChainmail
+  stackEntity: LLMaterialChainmail1
+  unit: materials-unit-sheet
+  name: Кольчуга
+  icon: { sprite: /Textures/_LL/Entities/Materials/chainmail.rsi, state: chainmail_1 }
+  color: "#A0A0A0"
+  price: 0.15
+
+#СТАКИ
+- type: stack
+  id: LLChainmail
+  name: Кольчуга
+  icon: { sprite: _LL/Entities/Materials/chainmail.rsi, state: chainmail_1 }
+  spawn: LLMaterialChainmail1
+  maxCount: 2
+  itemSize: 2
+
+#МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialTitanium
+  name: титановая бронеплостина
+  description: Прочная и легкая титановая пластина.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/titanium.rsi
+    state: titanium
+  - type: Stack
+    stackType: LLTitanium
+    count: 1
+  - type: PhysicalComposition
+    materialComposition:
+      LLTitanium: 100
+
+- type: entity
+  parent: LLMaterialTitanium
+  id: LLMaterialTitanium1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+#МАТЕРИАЛЫ (В РЕАГЕНТАХ)
+- type: material
+  id: LLTitanium
+  stackEntity: LLMaterialTitanium1
+  unit: materials-unit-sheet
+  name: Титановая плита
+  icon: { sprite: /Textures/_LL/Entities/Materials/titanium.rsi, state: titanium }
+  color: "#B0C4DE"
+  price: 0.25
+
+#СТАКИ
+- type: stack
+  id: LLTitanium
+  name: Титановая плита
+  icon: { sprite: _LL/Entities/Materials/titanium.rsi, state: titanium }
+  spawn: LLMaterialTitanium1
+  maxCount: 1
+  itemSize: 3
+
+#МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialAramid
+  name: арамидные волокна
+  description: Кевлар или какой-то другой вид крайне прочной ткани, на глаз не поймешь.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/aramid.rsi
+    state: aramid_1
+    layers:
+    - state: aramid_1
+      map: ["base"]
+  - type: Stack
+    stackType: LLAramid
+    count: 15
+    baseLayer: base
+    layerStates:
+    - aramid_1
+    - aramid_2
+    - aramid_3
+  - type: PhysicalComposition
+    materialComposition:
+      LLAramid: 100
+
+- type: entity
+  parent: LLMaterialAramid
+  id: LLMaterialAramid1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+#МАТЕРИАЛЫ (В РЕАГЕНТАХ)
+- type: material
+  id: LLAramid
+  stackEntity: LLMaterialAramid1
+  unit: materials-unit-roll
+  name: Арамидные волокна
+  icon: { sprite: /Textures/_LL/Entities/Materials/aramid.rsi, state: aramid_1 }
+  color: "#C0C0C0"
+  price: 0.1
+
+#СТАКИ
+- type: stack
+  id: LLAramid
+  name: Арамидные волокна
+  icon: { sprite: _LL/Entities/Materials/aramid.rsi, state: aramid_1 }
+  spawn: LLMaterialAramid1
+  maxCount: 15
+  itemSize: 1
+
+#МАТЕРИАЛЫ (В ЭНТИТИ - ОБЪЕКТЫ)
+- type: entity
+  parent: N14MaterialBase
+  id: LLMaterialAsbestos
+  name: асбестовая ткань
+  description: Огнеупорная ткань из минеральных волокон. Крайне опасна при вдыхании пыли.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _LL/Entities/Materials/asbestos.rsi
+    state: asbestos_1
+    layers:
+    - state: asbestos_1
+      map: ["base"]
+  - type: Stack
+    stackType: LLAsbestos
+    count: 15
+    baseLayer: base
+    layerStates:
+    - asbestos_1
+    - asbestos_10
+    - asbestos_20
+  - type: PhysicalComposition
+    materialComposition:
+      LLAsbestos: 100
+
+- type: entity
+  parent: LLMaterialAsbestos
+  id: LLMaterialAsbestos1
+  suffix: одна штука
+  components:
+  - type: Stack
+    count: 1
+
+#МАТЕРИАЛЫ (В РЕАГЕНТАХ)
+- type: material
+  id: LLAsbestos
+  stackEntity: LLMaterialAsbestos1
+  unit: materials-unit-roll
+  name: Асбестовая ткань
+  icon: { sprite: /Textures/_LL/Entities/Materials/asbestos.rsi, state: asbestos_1 }
+  color: "#D3D3D3"
+  price: 0.05
+
+#СТАКИ
+- type: stack
+  id: LLAsbestos
+  name: Асбестовая ткань
+  icon: { sprite: _LL/Entities/Materials/asbestos.rsi, state: asbestos_1 }
+  spawn: LLMaterialAsbestos1
+  maxCount: 15
+  itemSize: 1

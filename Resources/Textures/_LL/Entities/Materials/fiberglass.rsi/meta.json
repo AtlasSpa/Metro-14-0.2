@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "glasswool_2"
+    },
+    {
+      "name": "glasswool_3"
+    },
+    {
+      "name": "glasswool_1"
+    }
+  ]
+}
